@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, redirect
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    return render_template(url_for('static', filename='resume.html'))
+    return redirect(url_for('static', filename='resume.html'))
 
 
