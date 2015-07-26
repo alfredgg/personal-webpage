@@ -1,0 +1,13 @@
+<h1 class="content-subhead">Skills</h1>
+<div class="skills">
+    {{#each skills}}
+      <div class="skill">
+        <span class="skill-name">{{name}}</span>
+        {{#if level}}
+            {{#each keywords}}
+                <span class="skill-keyword skill-keyword-{{../level}}">{{this}}</span>
+            {{/each}} 
+        {{/if}}
+      </div>
+    {{/each}}
+</div>

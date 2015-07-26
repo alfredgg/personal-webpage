@@ -1,0 +1,3 @@
+<h1 class="brand-title">{{name}}</h1>
+<h2 class="brand-tagline">{{label}}</h2>
+<img class="main-photo" alt="{{name}} photo" src="{{picture}}">

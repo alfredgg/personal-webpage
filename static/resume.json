@@ -1,0 +1,285 @@
+{
+  "basics": {
+    "name": "Alfred García",
+    "label": "Creative Software Engineer",
+    "picture": "img/profile.jpg",
+    "email": "alfredgg@yahoo.es",
+    "phone": "",
+    "website": "http://alfred.is-a-rockstar.com",
+    "summary": "Specialist in software engineering and enthusiastic about the open source and sharing culture. My professional aim is to develop people-friendly programs, persisting in the development of artificial intelligence and multimedia oriented software. I hail from Barcelona and like to know other cities and cultures. Due to this reason, in the last years I have changed the place of living several times, residing in some Spanish cities and European countries. I plan to continue performing tasks as freelancer. So if you have an interesting project, maybe we can cooperate.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "region": ""
+    },
+    "profiles": [
+        {
+            "network": "github",
+            "username": "alfredgg",
+            "url": "https://github.com/alfredgg"
+        },
+        {
+            "network": "linkedin",
+            "username": "Alfred García",
+            "url": "https://www.linkedin.com/profile/view?id=131996177"
+        }
+    ]
+  },
+  "work": [
+      {
+          "company": "Freelance software engineer",
+          "website": "",
+          "startDate": "2012, October",
+          "endDate": "",
+          "summary": "Since I finished my Master's degree I have been performing several freelancer tasks on numerous companies. All of these tasks revolve graphics, interactive software, and new technologies like Oculus VR, Unity3D, Android Games, DirectShow, OpenFrameworks, and some web development.",
+          "highlights": []
+      },
+      {
+          "company": "Electronic Stars",
+          "position": "Software Architect",
+          "website": "http://www.electronicstars.com/",
+          "startDate": "2012, October",
+          "endDate": "",
+          "summary": "I helped to develop the first prototype of the application, coding the backend and the client parts in Python and C# respectively. I was promoted to backend leader when the company grew, now I continue with that role working actively with them in part-time.",
+          "highlights": []
+      },
+      {
+          "company": "Universitat de Barcelona",
+          "position": "Assistant professor",
+          "website": "http://www.ub.edu/",
+          "startDate": "2012, November",
+          "endDate": "2013, October",
+          "summary": "I wanted to try the experience of being a college teacher, so after my Master's degree I offered myself as assistant professor in the Computer Science department of Univesity of Barcelona. The subjects that I imparted were: Programming, Software Engineering, and Computer Graphics.",
+          "highlights": []
+      },
+      {
+          "company": "Autoritat del Transport Metropolità de Barcelona (ATM)",
+          "position": "Software Engineer",
+          "website": "http://www.atm.cat/",
+          "startDate": "2008, November",
+          "endDate": "2010, November",
+          "summary": "I worked on numerous projects based on the public transport field. I used .NET web framework to build software that managed transport data, creating RESTful web services, and applying GIS technologies.",
+          "highlights": []
+      },
+      {
+          "company": "Digital Emotions Co.",
+          "position": "Senior Software Developer",
+          "website": "",
+          "startDate": "2004, June",
+          "endDate": "2005, September",
+          "summary": "Digital Emotions co. is a currently closed company where I started as junior developer. After few months I got promoted and led the development of an Enterprise Resource Planning software made in C#.",
+          "highlights": []
+      },
+      {
+          "company": "Short time works",
+          "position": "Software Developer",
+          "website": "",
+          "startDate": "2003, June",
+          "endDate": "2008, November",
+          "summary": "During my apprentice period I collaborated with some companies making some works for them. Those works revolved fields like leisure and management, and were programmed in technologies like Java, ASP4, VBScript, PHP, and VisualBasic 6.",
+          "highlights": []
+      }
+  ],
+  "volunteer": [
+      {
+          "organization": "Gamestar(t)",
+          "position": "Companion",
+          "website": "http://gamestart.arsgames.net/",
+          "startDate": "2015, April",
+          "endDate": "",
+          "summary": "Gamestar(t) is a project that brings together art, videogames, and technology. All of these elements are connected using an innovative theory in pedagogy. When I discovered it, I did my best to cooperate with them.",
+          "highlights": []
+      }
+  ],
+  "education": [
+      {
+        "institution": "Universitat Politècnica de Catalunya, Universitat de Barcelona, Universitat Rovira i Virgili",
+        "area": "Artificial Intelligence",
+        "studyType": "Master's degree",
+        "startDate": "2010, October",
+        "endDate": "2012, September",
+        "gpa": "",
+        "courses": []
+      },
+      {
+        "institution": "Universitat Autònoma de Barcelona",
+        "area": "Computer Science",
+        "studyType": "Engineer's degree",
+        "startDate": "2005, October",
+        "endDate": "2008, September",
+        "gpa": "",
+        "courses": []
+      },
+      {
+        "institution": "Stucom",
+        "area": "Software Development",
+        "studyType": "Técnico superior en desarrollo de aplicaciones informáticas",
+        "startDate": "2002, October",
+        "endDate": "2003, June",
+        "gpa": "",
+        "courses": []
+      },
+      {
+        "institution": "Stucom",
+        "area": "Computer Science",
+        "studyType": "Técnico superior en administración de sistemas informáticos",
+        "startDate": "2000, October",
+        "endDate": "2002, June",
+        "gpa": "",
+        "courses": []
+      }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+      {
+          "name": "Creativity and analytic capabilities. Great initiative."
+      },
+      {
+          "name": "Expertise in programming languages",
+          "level": "master",
+          "keywords": [
+              "Python",
+              "C/C++",
+              "C#",
+              "Java"
+            ]
+      }, 
+      {
+          "name": "Mastering in multimedia environments and frameworks",
+          "level": "master",
+          "keywords": [
+              "OpenGL",
+              "Processing",
+              "OpenFrameworks",
+              "DirectX",
+              "OpenCV"
+            ]
+      },
+      {
+          "name": "Great knowledge in Artificial intelligence",
+          "level": "advanced",
+          "keywords": [
+              "Computer vision",
+              "Machine learning",
+              "Data mining"
+            ]
+      },
+      {
+          "name": "Knowledge in relational and object oriented data bases",
+          "level": "advanced",
+          "keywords": [
+              "SQL",
+              "MongoDB"
+            ]
+      },
+      {
+          "name": "Some experiense in web development",
+          "level": "some-knowledge",
+          "keywords": [
+              "JavaScript",
+              "Django & Flask",
+              "JS & CSS frameworks"
+            ]
+      },
+      {
+          "name": "Use of statistical languages",
+          "level": "some-knowledge",
+          "keywords": [
+              "R",
+              "MATLAB"
+            ]
+      },
+      {
+          "name": "Other mastering knowledge",
+          "level": "master",
+          "keywords": [
+              "Linux"
+            ]
+      },
+      {
+          "name": "Other knowledge and experience",
+          "level": "some-knowledge",
+          "keywords": [
+              "Arduino",
+              "GIS",
+              "Android development",
+              "Blender"
+            ]
+      }
+  ],      
+  "languages": [
+      {
+          "language": "Spanish",
+          "fluency": "Native speaker"
+      },
+      {
+          "language": "Catalan",
+          "fluency": "Native speaker"
+      },
+      {
+          "language": "English",
+          "fluency": "I can communicate correctly. I usually read articles and books or have conversations in this language."
+      }
+  ],
+  "interests": [
+      {
+          "name": "Interactive Installations & Interactivity",
+          "keywords": []
+      },
+      {
+          "name": "Artificial Intelligence",
+          "keywords": []
+      },
+      {
+          "name": "Philosophy",
+          "keywords": []
+      },
+      {
+          "name": "Software Engineering",
+          "keywords": []
+      },
+      {
+          "name": "Computer Generated Graphics",
+          "keywords": []
+      },
+      {
+          "name": "Electronics",
+          "keywords": []
+      },
+      {
+          "name": "Creativity",
+          "keywords": []
+      },
+      {
+          "name": "Art & Design",
+          "keywords": []
+      }
+  ],
+  "references": [],
+  "projects": [
+      {
+          "name": "3D scene reconstruction and understanding from single shot pictures",
+          "website": "",
+          "summary": "This was my master's degree thesis, a research project which aimed to reconstruct a 3D scene from single shot pictures using a machine learning approach. It was capable of reconstruct those pictures in navigable 3D scenes. It also integrated virtual elements to form an augmented reality scenario.",
+          "startDate": "September, 2011",
+          "endDate": "September, 2012"
+      },
+      {
+          "name": "N-bolas",
+          "website": "",
+          "summary": "My dissertation for the Computer Science Engineering. It consisted on developing a multimedia framework from scratch, which was used to create a videogame controlled by a computer vision engine.",
+          "startDate": "June, 2008",
+          "endDate": "September, 2008"
+      },
+      {
+          "name": "Personal projects",
+          "website": "",
+          "summary": "During the course of my career I have used several technologies to implement a large variety of projects for personal use focused on making my everyday tasks easier, they include from server to mobile phone applications.",
+          "startDate": "",
+          "endDate": ""
+      }
+  ]
+}

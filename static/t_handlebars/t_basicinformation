@@ -1,0 +1,21 @@
+<h1 class="content-subhead">Information</h1>
+<div class="section">
+    {{#with basicinfo}}
+    <span class="additional-info">Currently living in </span><span class="additional-info additional-info-emphasized">{{location.city}} ({{location.countryCode}})</span> <br></br>
+    <span class="additional-info">E-Mail: </span><span class="additional-info additional-info-emphasized">{{email}}</span>
+    {{/with}}
+    <h2 class="section-title">Languages</h2>
+    <dl>
+        {{#each languages}}
+        <dt>{{language}}<dt><dd>{{fluency}}</dd>
+        {{/each}}
+    </dl>
+    <h2 class="section-title">Online profiles</h2>
+    {{#with basicinfo}}
+    <ul class="onlineprofile">
+        {{#each profiles}}
+        <li><a href="{{url}}"><i class="fa fa-{{network}}-square fa-3x" title="{{network}}"></i></a></li>
+        {{/each}}
+    </ul>
+    {{/with}}
+</div>

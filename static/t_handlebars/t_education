@@ -1,0 +1,12 @@
+<h1 class="content-subhead">Education</h1>
+{{#each education}}
+  <div class="section">
+    <h2 class="section-title">{{studyType}}, {{area}}</h2>
+    <div>
+        <span class="additional-info">{{institution}}</span>
+    </div>
+    <div>
+        <span class="additional-info">{{startDate}}{{#if endDate}} - {{endDate}}{{/if}}</span>
+    </div>
+ </div>
+{{/each}}

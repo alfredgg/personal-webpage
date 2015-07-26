@@ -1,0 +1,6 @@
+<h1 class="content-subhead">Interests</h1>
+<div class="interests">
+{{#each interests}}
+    <span class="interest">{{name}}</span>
+{{/each}} 
+</div>

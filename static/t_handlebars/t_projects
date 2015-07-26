@@ -1,0 +1,11 @@
+<h1 class="content-subhead">Projects</h1>
+{{#each projects}}
+  <div class="section">
+    <h2 class="section-title">{{name}}</h2>
+    <div>
+        {{#if website}}<a href="{{website}}">{{website}}</a>{{/if}}
+        {{#if startDate}}<span class="additional-info">{{startDate}} - {{#if endDate}}{{endDate}}{{else}}Nowadays{{/if}}</span>{{/if}}
+    </div>
+    <p>{{summary}}</p>
+ </div>
+{{/each}}

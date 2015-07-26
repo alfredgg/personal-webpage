@@ -2,9 +2,48 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+<!--<![endif]-->
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="styles/layouts/blog.css">
+<!--<![endif]-->
+    
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/handlebars.runtime-v3.0.3.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/2html.js"></script>
+    
+    <title>Resume</title>    
 </head>
 <body>
-Hello world
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header" id="mainsection"></div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div class="posts">
+            <section class="post" id="summary"></section>
+            <section class="post" id="skills"></section>
+            <section class="post" id="works"></section>
+            <section class="post" id="volunteer"></section>
+            <section class="post" id="education"></section>
+            <section class="post" id="projects"></section>
+            <section class="post" id="basic-information"></section>
+            <section class="post" id="interests"></section>
+        </div>
+    </div>
+</div>    
 </body>
 </html>
