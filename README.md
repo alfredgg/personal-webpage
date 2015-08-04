@@ -5,4 +5,10 @@ My personal webpage, hosted on [http://alfred.is-a-rockstar.com](http://alfred.i
 
     gunicorn -w 4 webpage:app -b 0.0.0.0:8888
     
-  
+## To install dependences
+
+    pip install -r requirements.txt
+    
+## To install (or update) db
+
+    python install.py
