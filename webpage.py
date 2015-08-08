@@ -22,10 +22,9 @@ def register_ip(ip):
         ip = app.config.get('DEBUG_IP', '127.0.0.1')
     if ip == '127.0.0.1':
         return
-    connections = ClientConnection.objects.filter(ip=ip).all()
+    last_connection = ClientConnection.objects.filter(ip=ip).order_by('-date').first()
     now = arrow.utcnow().datetime.replace(tzinfo=None)
-    connections = [c for c in connections]
-    if connections and now - connections[-1].date.replace(tzinfo=None) < datetime.timedelta(hours=1):
+    if last_connection and now - last_connection.date < datetime.timedelta(hours=1):
         return
     v = locate_ip(ip)
     values = {'ip': ip}
