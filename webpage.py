@@ -24,6 +24,7 @@ def register_ip(ip):
         return
     connections = ClientConnection.objects.filter(ip=ip).all()
     now = arrow.utcnow().datetime.replace(tzinfo=None)
+    connections = [c for c in connections]
     if connections and now - connections[-1].date.replace(tzinfo=None) < datetime.timedelta(hours=1):
         return
     v = locate_ip(ip)
