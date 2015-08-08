@@ -40,14 +40,14 @@ def register_ip(ip):
 def root():
     if request.method == 'GET':
         return render_template('watch.html')
-    elif request.method == 'POST':
+    elif request.method == 'POST' and request.form['g-recaptcha-response']:
         data = {
             'secret': app.config['RECAPTCHA_SECRET'],
             'response': request.form['g-recaptcha-response'],
             'remoteip': request.remote_addr
         }
         response = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
-        if response.status_code == 200:
+        if response.status_code == 200 and response.json().get('success', False):
             register_ip(request.remote_addr)
             return redirect(url_for('static', filename='resume.html'))
     abort(404)
