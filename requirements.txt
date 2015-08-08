@@ -1,4 +1,5 @@
 flask
-flask-sqlalchemy
+Flask-Login
+Flask-MongoEngine
 requests
 arrow

@@ -3,39 +3,37 @@
 
 
 from flask import Flask, url_for, redirect, request
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.mongoengine import MongoEngine
 from utils import locate_ip
 import arrow
 import datetime
 
+
 app = Flask(__name__)
-app.config.from_object('config')
-db = SQLAlchemy(app)
+app.config.from_object('config.default')
+app.config.from_envvar('PERSONAL_WEBPAGE_SETTINGS', silent=True)       # config/dev.py
+db = MongoEngine(app)
 
 from model import ClientConnection
 
 
 def register_ip(ip):
+    if app.debug:
+        ip = app.config.get('DEBUG_IP', '127.0.0.1')
     if ip == '127.0.0.1':
         return
-    last_connection = ClientConnection.query.filter_by(ip=ip).all()
+    connections = ClientConnection.objects.filter(ip=ip).all()
     now = arrow.utcnow().datetime.replace(tzinfo=None)
-    if last_connection and now - last_connection[-1].date.replace(tzinfo=None) < datetime.timedelta(hours=1):
+    if connections and now - connections[-1].date.replace(tzinfo=None) < datetime.timedelta(hours=1):
         return
     v = locate_ip(ip)
-    connection = ClientConnection(
-        date=arrow.utcnow().datetime,
-        ip=ip,
-        country=v['country'],
-        region=v['region'],
-        city=v['city'],
-        lat=v['lat'],
-        lon=v['lon'],
-        isp=v['isp'],
-        aka=v['as']
-    )
-    db.session.add(connection)
-    db.session.commit()
+    values = {'ip': ip}
+    if v is not None:
+        values.update(v)
+    values.update(v)
+    connection = ClientConnection(**values)
+    connection.save()
+
 
 @app.route('/')
 def root():
