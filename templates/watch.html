@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="styles/global.css">
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+<div class="absolute-center">
+    <form action="./resume" method="POST" name="the_form">
+        <p>
+            Next page contains personal information and I have to assure myself that you are not a robot. Please, if
+                you are a human being, still having some doubts about it, check the next box:
+        </p>
+        <div class="g-recaptcha right-align" data-sitekey="6Le3AAsTAAAAAP8pMgC1k8ddzBrn-YlPMaRGE65S"></div>
+        <div class="bottom-align" align="right">
+            <a href="#" onclick="document.forms['the_form'].submit();">Access to my resume</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
