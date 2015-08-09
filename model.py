@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 from webpage import db
-import arrow
+import datetime
 
 
 class ClientConnection(db.Document):
-    date = db.DateTimeField(default=arrow.utcnow().datetime)
+    date = db.DateTimeField(default=datetime.datetime.now())
     ip = db.StringField(max_length=15)
     country = db.StringField(max_length=100)
     region = db.StringField(max_length=100)

@@ -5,7 +5,6 @@
 from flask import Flask, url_for, redirect, request, abort, render_template
 from flask.ext.mongoengine import MongoEngine
 from utils import locate_ip
-import arrow
 import datetime
 import requests
 
@@ -23,7 +22,7 @@ def register_ip(ip):
     if ip == '127.0.0.1':
         return
     last_connection = ClientConnection.objects.filter(ip=ip).order_by('-date').first()
-    now = arrow.utcnow().datetime.replace(tzinfo=None)
+    now = datetime.datetime.now()
     if last_connection and now - last_connection.date < datetime.timedelta(hours=1):
         return
     v = locate_ip(ip)
@@ -40,14 +39,16 @@ def register_ip(ip):
 def root():
     if request.method == 'GET':
         return render_template('watch.html')
-    elif request.method == 'POST' and request.form['g-recaptcha-response']:
+    elif request.method == 'POST' \
+            and (request.form['g-recaptcha-response'] or app.debug):
         data = {
             'secret': app.config['RECAPTCHA_SECRET'],
             'response': request.form['g-recaptcha-response'],
             'remoteip': request.remote_addr
         }
         response = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
-        if response.status_code == 200 and response.json().get('success', False):
+        no_robot = response.status_code == 200 and response.json().get('success', False)
+        if no_robot or app.debug:
             register_ip(request.remote_addr)
             return redirect(url_for('static', filename='resume.html'))
     abort(404)
