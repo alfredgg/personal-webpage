@@ -33,6 +33,24 @@ h3 {
     margin: 3em auto;
 }
 
+.submenu {
+    height: 10px;
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    visibility: hidden;
+    font-size: x-small;
+    padding-left: 20px;
+}
+
+.submenu a {
+    color: rgb(176, 202, 219);
+}
+
+.submenu li {
+    list-style-type: none;
+}
+
 .sidebar {
     background: rgb(61, 79, 93);
     color: #fff;
@@ -91,10 +109,11 @@ h3 {
 
 .main-photo {
     border-radius: 100px;
-    float: right;
+    float: none;
     margin: 1em;
     width: 150px;
     height: 150px;
+
 }
 
 .post {
@@ -247,5 +266,9 @@ h3 {
         position: fixed;
         top: 0;
         bottom: 0;
+    }
+
+    .submenu {
+        visibility: visible;
     }
 }

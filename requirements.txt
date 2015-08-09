@@ -2,3 +2,4 @@ flask
 Flask-Login
 Flask-MongoEngine
 requests
+jsonpickle

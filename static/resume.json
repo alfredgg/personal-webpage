@@ -1,4 +1,5 @@
 {
+  "_comment": "This format is based on https://jsonresume.org/ ",
   "basics": {
     "name": "Alfred García",
     "label": "Creative Software Engineer",

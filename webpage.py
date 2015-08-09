@@ -2,58 +2,25 @@
 # -*- coding: utf-8 -*-
 
 
-from flask import Flask, url_for, redirect, request, abort, render_template
+from flask import Flask, render_template
 from flask.ext.mongoengine import MongoEngine
-from utils import locate_ip
-import datetime
-import requests
 
 app = Flask(__name__, static_url_path='')
 app.config.from_object('config.default')
 app.config.from_envvar('PERSONAL_WEBPAGE_SETTINGS', silent=True)       # config/dev.py
+
 db = MongoEngine(app)
 
-from model import ClientConnection
 
-
-def register_ip(ip):
-    if app.debug:
-        ip = app.config.get('DEBUG_IP', '127.0.0.1')
-    if ip == '127.0.0.1':
-        return
-    last_connection = ClientConnection.objects.filter(ip=ip).order_by('-date').first()
-    now = datetime.datetime.now()
-    if last_connection and now - last_connection.date < datetime.timedelta(hours=1):
-        return
-    v = locate_ip(ip)
-    values = {'ip': ip}
-    if v is not None:
-        values.update(v)
-    values.update(v)
-    connection = ClientConnection(**values)
-    connection.save()
-
-
-@app.route('/', methods=['GET', 'POST'])
-@app.route('/resume', methods=['GET', 'POST'])
+@app.route('/', methods=['GET'])
 def root():
-    if request.method == 'GET':
-        return render_template('watch.html')
-    elif request.method == 'POST' \
-            and (request.form['g-recaptcha-response'] or app.debug):
-        data = {
-            'secret': app.config['RECAPTCHA_SECRET'],
-            'response': request.form['g-recaptcha-response'],
-            'remoteip': request.remote_addr
-        }
-        response = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
-        no_robot = response.status_code == 200 and response.json().get('success', False)
-        if no_robot or app.debug:
-            register_ip(request.remote_addr)
-            return redirect(url_for('static', filename='resume.html'))
-    abort(404)
+    return render_template('watch.html')
 
 
 @app.route('/login')
 def login():
     pass
+
+from views import resume
+
+app.register_blueprint(resume.blueprint, url_prefix='/resume')
