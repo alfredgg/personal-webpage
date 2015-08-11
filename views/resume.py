@@ -27,8 +27,10 @@ def register_ip(ip):
     connection.save()
 
 
-@blueprint.route('/', methods=['POST'])
+@blueprint.route('/', methods=['POST', 'GET'])
 def root():
+    if request.method == 'GET':
+        return redirect(url_for('root'))
     if request.form['g-recaptcha-response'] or current_app.debug:
         data = {
             'secret': current_app.config['RECAPTCHA_SECRET'],

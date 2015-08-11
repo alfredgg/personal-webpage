@@ -9,6 +9,3 @@ My personal webpage, hosted on [http://alfred.is-a-rockstar.com](http://alfred.i
 
     pip install -r requirements.txt
     
-## To install (or update) db
-
-    python install.py

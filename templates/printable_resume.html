@@ -14,18 +14,21 @@
         body {
             font-family: sans-serif;
             line-height: 1.3;
+            font-size: 1.1em;
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 1.9em;
+            font-family: "Trebuchet MS", sans-serif;
         }
 
         h2 {
-            font-size: 1.7em;
+            font-size: 1.6em;
+            font-family: "Trebuchet MS", sans-serif;
         }
 
         h3 {
-            font-size: 1.5em;
+            font-size: 1.4em;
         }
 
         li {
@@ -36,6 +39,19 @@
 
         li ul li {
             text-indent: -5em;
+        }
+
+        .content {
+            padding-left: 3em;
+            margin-top: 20px;
+        }
+
+        .content-title {
+            font-size: 1.2em;
+        }
+
+        .skills {
+            line-height: 1.5;
         }
 
         @media print {
@@ -49,8 +65,11 @@
 
 <div class="row column_wrapper">
   <div class="col-md-6 col-md-offset-3">
+    <dif style="text-align: right;">
     <h1>{{ basics.name }}. Resume {{ year }}, {{ month_name }}</h1>
     <h2>{{ basics.label }}</h2>
+    </dif>
+    <hr>
     <h3>Basic information</h3>
     <ul>
         <li><strong>Email:</strong> {{ basics.email }}</li>
@@ -66,13 +85,56 @@
             </ul>
         </li>
     </ul>
+
     <h3>Skills</h3>
+
     <ul>
       {% for skill in skills %}
-          <li>{{ skill.name }} {% if skill.keywords  %}({% for kword in skill.keywords %}{{ kword }}{% if not loop.last %}, {% endif %}{% endfor %}){% endif %}</li>
+          <li class="skills">{{ skill.name }} {% if skill.keywords  %}({% for kword in skill.keywords %}{{ kword }}{% if not loop.last %}, {% endif %}{% endfor %}){% endif %}</li>
       {% endfor %}
     </ul>
 
+    <h3>Works</h3>
+
+      {% for w in work %}
+        <p class="content">
+            <strong><span class="content-title">{{ w.company }}</span>{% if w.website %} - {{ w.website }}, {% else %}, {% endif %}{{ w.startDate }} - {% if w.endDate %}{{ w.endDate }}{% else %}Nowadays{% endif %}</strong><br>
+            {{ w.summary }}
+        </p>
+      {% endfor %}
+
+    <h3>Education</h3>
+
+        {% for ed in education %}
+        <p class="content">
+            <strong><span class="content-title">{{ ed.studyType }}, {{ ed.area }}</span></strong><br>
+            {{ ed.institution }}, {{ ed.startDate }} - {% if ed.endDate %}{{ ed.endDate }}{% else %}Nowadays{% endif %}
+        </p>
+        {% endfor %}
+
+    <h3>Projects</h3>
+
+        {% for proj in projects %}
+        <p class="content">
+            <strong><span class="content-title">{{ proj.name }}</span></strong><br>
+            {% if proj.website %}{{ proj.website }}, {% endif %}{% if proj.startDate %}{{ proj.startDate }} - {% if proj.endDate %}{{ proj.endDate }}{% else %}Nowadays{% endif %}{% endif %}{% if proj.website or proj.startDate %}<br>{% endif %}
+            {{ proj.summary }}
+        </p>
+        {% endfor %}
+
+    <h3>Volunteer</h3>
+        {% for vol in volunteer %}
+        <p class="content">
+            <strong><span class="content-title">{{ vol.position }} in {{ vol.organization }}</span></strong><br>
+            {% if vol.website %}{{ vol.website }}, {% endif %}{{ vol.startDate }} - {% if vol.endDate %}{{ vol.endDate }}{% else %}Nowadays{% endif %}<br>
+            {{ vol.summary }}
+        </p>
+        {% endfor %}
+
+    <h3>Interests</h3>
+        <p class="content">
+          {% for interest in interests %}{{ interest.name }}{% if not loop.last %}, {% endif %}{% endfor %}.
+        </p>
   </div>
 </div>
 
