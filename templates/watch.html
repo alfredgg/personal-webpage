@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title></title>
 
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
     <script>
         function submit_the_form() {
             if (document.getElementById("g-recaptcha-response").value !== "") document.forms['the_form'].submit();
+            else document.getElementsByClassName('advice')[0].style.visibility='visible';
         }
     </script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -19,6 +20,7 @@
             Next page contains personal information and I have to assure myself that you are not a robot. Please, if
                 you are a human being, still having some doubts about it, check the next box:
         </p>
+        <img src="{{ url_for('static', filename='img/hand.gif') }}" class="advice" width="170px">
         <div class="g-recaptcha right-align" data-sitekey="6Le3AAsTAAAAAP8pMgC1k8ddzBrn-YlPMaRGE65S"></div>
         <div class="bottom-align" align="right">
             <a href="#" onclick="submit_the_form();">Access to my resume</a>

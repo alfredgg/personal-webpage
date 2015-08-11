@@ -3,9 +3,9 @@
   "basics": {
     "name": "Alfred García",
     "label": "Creative Software Engineer",
-    "picture": "img/profile.jpg",
+    "picture": "/static/img/profile.jpg",
     "email": "alfredgg@yahoo.es",
-    "phone": "",
+    "phone": "(+34) 610 904 016",
     "website": "http://alfred.is-a-rockstar.com",
     "summary": "Specialist in software engineering and enthusiastic about the open source and sharing culture. My professional aim is to develop people-friendly programs, persisting in the development of artificial intelligence and multimedia oriented software. I was born in 1981 and hail from Barcelona. I like a lot to know other cities and cultures, due to this reason I have changed the place of living several times in the last years, residing in several European cities. I plan to continue performing tasks as freelancer, so if you have an interesting project maybe we can cooperate.",
     "location": {
@@ -222,7 +222,7 @@
       },
       {
           "language": "English",
-          "fluency": "I can communicate correctly. I usually read articles and books or have conversations in this language."
+          "fluency": "My capacities in this language are adequate to communicate. I usually read articles and books or have conversations in English."
       }
   ],
   "interests": [

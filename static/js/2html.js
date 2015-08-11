@@ -5,14 +5,8 @@
 
 (function () {
     "use strict";
-    var lang, d_mainsection, d_summary, d_skills, d_works, d_education, d_basicinformation, d_interests, d_projects, d_volunteer;
-    lang = (function (name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }("lang"));
-    lang = (!lang) ? "" : lang + ".";
-    $.getJSON("resume." + lang + "json", function (data) {
+    var d_mainsection, d_summary, d_skills, d_works, d_education, d_basicinformation, d_interests, d_projects, d_volunteer;
+    $.getJSON(resume_url, function (data) {
         console.log(data);
         
         d_mainsection = Handlebars.templates.t_mainsection(data.basics);

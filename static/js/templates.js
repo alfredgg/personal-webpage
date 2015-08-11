@@ -165,7 +165,7 @@ templates['t_skills'] = template({"1":function(depth0,helpers,partials,data,bloc
 templates['t_summary'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper;
 
-  return "<p>\n"
+  return "<h1 class=\"content-subhead\">Introduction</h1>\n<p>\n"
     + this.escapeExpression(((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"summary","hash":{},"data":data}) : helper)))
     + "\n</p>";
 },"useData":true});

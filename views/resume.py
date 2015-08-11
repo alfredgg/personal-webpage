@@ -39,7 +39,7 @@ def root():
         no_robot = response.status_code == 200 and response.json().get('success', False)
         if no_robot or current_app.debug:
             register_ip(request.remote_addr)
-            return redirect(url_for('static', filename='resume.html'))
+            return render_template('resume.html')
     abort(404)
 
 

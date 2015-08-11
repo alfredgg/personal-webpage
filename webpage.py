@@ -5,7 +5,7 @@
 from flask import Flask, render_template
 from flask.ext.mongoengine import MongoEngine
 
-app = Flask(__name__, static_url_path='')
+app = Flask(__name__)
 app.config.from_object('config.default')
 app.config.from_envvar('PERSONAL_WEBPAGE_SETTINGS', silent=True)       # config/dev.py
 
