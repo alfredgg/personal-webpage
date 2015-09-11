@@ -25,6 +25,11 @@
             "network": "linkedin",
             "username": "Alfred García",
             "url": "https://www.linkedin.com/profile/view?id=131996177"
+        },
+        {
+            "network": "twitter",
+            "username": "4lfredg",
+            "url": "https://twitter.com/4lfredg"
         }
     ]
   },
@@ -95,6 +100,15 @@
       }
   ],
   "education": [
+      {
+        "institution": "UNED",
+        "area": "Philosophy",
+        "studyType": "Degree",
+        "startDate": "2015, October",
+        "endDate": "",
+        "gpa": "",
+        "courses": []
+      },
       {
         "institution": "Universitat Politècnica de Catalunya, Universitat de Barcelona, Universitat Rovira i Virgili",
         "area": "Artificial Intelligence",
@@ -256,6 +270,10 @@
       },
       {
           "name": "Art & Design",
+          "keywords": []
+      },
+      {
+          "name": "Free and Open Source Software",
           "keywords": []
       }
   ],
