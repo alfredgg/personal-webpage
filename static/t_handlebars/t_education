@@ -6,7 +6,7 @@
         <span class="additional-info">{{institution}}</span>
     </div>
     <div>
-        <span class="additional-info">{{startDate}}{{#if endDate}} - {{endDate}}{{/if}}</span>
+        <span class="additional-info">{{startDate}} - {{#if endDate}}{{endDate}}{{else}}Nowadays{{/if}}</span>
     </div>
  </div>
 {{/each}}

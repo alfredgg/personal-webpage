@@ -56,13 +56,15 @@ templates['t_education'] = template({"1":function(depth0,helpers,partials,data) 
     + alias3(((helper = (helper = helpers.institution || (depth0 != null ? depth0.institution : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"institution","hash":{},"data":data}) : helper)))
     + "</span>\n    </div>\n    <div>\n        <span class=\"additional-info\">"
     + alias3(((helper = (helper = helpers.startDate || (depth0 != null ? depth0.startDate : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"startDate","hash":{},"data":data}) : helper)))
-    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.endDate : depth0),{"name":"if","hash":{},"fn":this.program(2, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + " - "
+    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.endDate : depth0),{"name":"if","hash":{},"fn":this.program(2, data, 0),"inverse":this.program(4, data, 0),"data":data})) != null ? stack1 : "")
     + "</span>\n    </div>\n </div>\n";
 },"2":function(depth0,helpers,partials,data) {
     var helper;
 
-  return " - "
-    + this.escapeExpression(((helper = (helper = helpers.endDate || (depth0 != null ? depth0.endDate : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"endDate","hash":{},"data":data}) : helper)));
+  return this.escapeExpression(((helper = (helper = helpers.endDate || (depth0 != null ? depth0.endDate : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"endDate","hash":{},"data":data}) : helper)));
+},"4":function(depth0,helpers,partials,data) {
+    return "Nowadays";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 
