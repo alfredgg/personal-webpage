@@ -1,7 +1,7 @@
 <h1 class="content-subhead">Works</h1>
 {{#each works}}
   <div class="section">
-    <h2 class="section-title">{{company}}</h2>
+    <h2 class="section-title">{{#if position}}{{position}} in {{/if}}{{company}}</h2>
     <div>
         {{#if website}}<a href="{{website}}">{{website}}</a>{{/if}}
         <span class="additional-info">{{startDate}} - {{#if endDate}}{{endDate}}{{else}}Nowadays{{/if}}</span>

@@ -98,7 +98,8 @@
 
       {% for w in work %}
         <p class="content">
-            <strong><span class="content-title">{{ w.company }}</span>{% if w.website %} - {{ w.website }}, {% else %}, {% endif %}{{ w.startDate }} - {% if w.endDate %}{{ w.endDate }}{% else %}Nowadays{% endif %}</strong><br>
+            <strong><span class="content-title">{%  if w.position %}{{ w.position }} in {% endif %}{{ w.company }}</span><br>
+            {% if w.website %}{{ w.website }}, {% else %} {% endif %}{{ w.startDate }} - {% if w.endDate %}{{ w.endDate }}{% else %}Nowadays{% endif %}</strong><br>
             {{ w.summary }}
         </p>
       {% endfor %}
