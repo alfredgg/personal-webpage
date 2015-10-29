@@ -162,7 +162,7 @@
       },
       {
           "name": "Expertise in programming languages",
-          "level": "master",
+          "level": "mastery",
           "keywords": [
               "Python",
               "C/C++",
@@ -172,7 +172,7 @@
       }, 
       {
           "name": "Mastering in multimedia environments and frameworks",
-          "level": "master",
+          "level": "mastery",
           "keywords": [
               "OpenGL",
               "Processing",
@@ -183,7 +183,7 @@
       },
       {
           "name": "Great knowledge in Artificial intelligence",
-          "level": "advanced",
+          "level": "proficiency",
           "keywords": [
               "Computer vision",
               "Machine learning",
@@ -192,7 +192,7 @@
       },
       {
           "name": "Knowledge in relational and object oriented data bases",
-          "level": "advanced",
+          "level": "proficiency",
           "keywords": [
               "SQL",
               "MongoDB"
@@ -200,7 +200,7 @@
       },
       {
           "name": "Some experiense in web development",
-          "level": "some-knowledge",
+          "level": "familiarity",
           "keywords": [
               "JavaScript",
               "Django & Flask",
@@ -209,7 +209,7 @@
       },
       {
           "name": "Use of statistical languages",
-          "level": "some-knowledge",
+          "level": "familiarity",
           "keywords": [
               "R",
               "MATLAB"
@@ -217,14 +217,14 @@
       },
       {
           "name": "Other mastering knowledge",
-          "level": "master",
+          "level": "mastery",
           "keywords": [
               "Linux"
             ]
       },
       {
           "name": "Other knowledge and experience",
-          "level": "some-knowledge",
+          "level": "familiarity",
           "keywords": [
               "Arduino",
               "GIS",

@@ -11,3 +11,7 @@
       </div>
     {{/each}}
 </div>
+
+<div class="legend">
+<span class="legend-mastery">&#9632;</span> mastery level <span class="legend-proficiency">&#9632;</span> proficiency level <span class="legend-familiarity">&#9632;</span> familiarity level
+</div>

@@ -162,7 +162,7 @@ templates['t_skills'] = template({"1":function(depth0,helpers,partials,data,bloc
 
   return "<h1 class=\"content-subhead\">Skills</h1>\n<div class=\"skills\">\n"
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.skills : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + "</div>";
+    + "</div>\n\n<div class=\"legend\">\n<span class=\"legend-mastery\">&#9632;</span> mastery level <span class=\"legend-proficiency\">&#9632;</span> proficiency level <span class=\"legend-familiarity\">&#9632;</span> familiarity level\n</div>";
 },"useData":true,"useDepths":true});
 templates['t_summary'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper;

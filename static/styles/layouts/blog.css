@@ -153,16 +153,41 @@ h3 {
     line-height: 2em;
 }
 
-.skill-keyword-master {
+.skill-keyword-mastery {
     background: #5aba59;
 }
 
-.skill-keyword-advanced {
+.skill-keyword-proficiency {
     background: #4d85d1;
 }
 
-.skill-keyword-some-knowledge {
+.skill-keyword-familiarity {
     background: #8156a7;
+}
+
+.legend {
+    color: #aaa;
+    font-size: 80%;
+
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    padding-right: 5em;
+}
+
+.legend .legend-mastery {
+    color: #5aba59;
+    font-size: 150%;
+}
+
+.legend .legend-proficiency {
+    color: #4d85d1;
+    font-size: 150%;
+}
+
+.legend .legend-familiarity {
+    color: #8156a7;
+    font-size: 150%;
 }
 
 .interests {

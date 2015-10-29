@@ -9,3 +9,6 @@ My personal webpage, hosted on [http://alfred.is-a-rockstar.com](http://alfred.i
 
     pip install -r requirements.txt
     
+## To change the config file
+
+You should change the PERSONAL_WEBPAGE_SETTINGS environtment variable value by: config/dev.py
