@@ -35,10 +35,18 @@
   },
   "work": [
       {
+          "company": "Visyon",
+          "website": "www.visyon360.com/masterpresentation",
+          "startDate": "2015, November",
+          "endDate": "",
+          "summary": "",
+          "highlights": []
+      },
+      {
           "company": "Freelance software engineer",
           "website": "",
           "startDate": "2012, October",
-          "endDate": "",
+          "endDate": "2015, October",
           "summary": "Since I finished my Master's degree I have been performing several freelancer tasks on numerous companies. All of these tasks revolve graphics, interactive software, and new technologies like Oculus VR, Unity3D, Android Games, DirectShow, OpenFrameworks, and some web development.",
           "highlights": []
       },
@@ -47,8 +55,8 @@
           "position": "Software Architect",
           "website": "http://www.electronicstars.com/",
           "startDate": "2012, October",
-          "endDate": "",
-          "summary": "I helped to develop the first prototype of the application, coding the backend and the client parts in Python and C# respectively. I was promoted to backend leader when the company grew, now I continue with that role working actively with them in part-time.",
+          "endDate": "2015, September",
+          "summary": "I helped to develop the first prototype of the application, coding the backend and the client parts in Python and C# respectively. I was promoted to backend leader when the company grew.",
           "highlights": []
       },
       {
@@ -94,7 +102,7 @@
           "position": "Companion",
           "website": "http://gamestart.arsgames.net/",
           "startDate": "2015, April",
-          "endDate": "",
+          "endDate": "2015, September",
           "summary": "Gamestar(t) is a project that brings together art, videogames, and technology. All of these elements are connected using an innovative theory in pedagogy. When I discovered it, I did my best to cooperate with them.",
           "highlights": []
       }
