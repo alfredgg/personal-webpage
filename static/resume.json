@@ -24,7 +24,7 @@
         {
             "network": "linkedin",
             "username": "Alfred García",
-            "url": "https://www.linkedin.com/profile/view?id=131996177"
+            "url": "https://www.linkedin.com/in/alfredgg"
         },
         {
             "network": "twitter",
@@ -36,10 +36,10 @@
   "work": [
       {
           "company": "Visyon",
-          "website": "www.visyon360.com/masterpresentation",
+          "website": "http://www.visyon360.com/masterpresentation",
           "startDate": "2015, November",
           "endDate": "",
-          "summary": "",
+          "summary": "They hired me because I did a 360 video streaming for them when I was freelancer. There I am developing virtual reality engines and graphical stuff.",
           "highlights": []
       },
       {
