@@ -7,7 +7,7 @@
     "email": "alfredgg@yahoo.es",
     "phone": "(+34) 610 904 016",
     "website": "http://alfred.is-a-rockstar.com",
-    "summary": "Specialist in software engineering and enthusiastic about the open source and sharing culture. My professional aim is to develop people-friendly programs, persisting in the development of artificial intelligence and multimedia oriented software. I was born in 1981 and hail from Barcelona. I like a lot to know other cities and cultures, due to this reason I have changed the place of living several times in the last years, residing in several European cities. I plan to continue performing tasks as freelancer, so if you have an interesting project maybe we can cooperate.",
+    "summary": "Freelance specialist in software engineering and enthusiastic about the open source and sharing culture. I was born in 1981 and hail from Barcelona. Since I started my career in software development have been programming in diverse fields like web applications, distributed computing, multimedia environments, and artificial intelligence engines. My aim always has been to cultivate new skills, not only in software development. Now I'm investigating about new forms of pedagogy and culture diffusion.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -35,19 +35,19 @@
   },
   "work": [
       {
-          "company": "Visyon",
-          "website": "http://www.visyon360.com/masterpresentation",
-          "startDate": "2015, November",
-          "endDate": "",
-          "summary": "They hired me because I did a 360 video streaming for them when I was freelancer. There I am developing virtual reality engines and graphical stuff.",
-          "highlights": []
-      },
-      {
           "company": "Freelance software engineer",
           "website": "",
           "startDate": "2012, October",
           "endDate": "2015, October",
           "summary": "Since I finished my Master's degree I have been performing several freelancer tasks on numerous companies. All of these tasks revolve graphics, interactive software, and new technologies like Oculus VR, Unity3D, Android Games, DirectShow, OpenFrameworks, and some web development.",
+          "highlights": []
+      },
+      {
+          "company": "Visyon360",
+          "website": "http://www.visyon360.com/",
+          "startDate": "2015, November",
+          "endDate": "2016, June",
+          "summary": "They hired me because I did a DirectShow filter for 360 video streaming when I was freelancer. There I have been developing virtual reality engines, interactive environments, and all kind of graphical stuff.",
           "highlights": []
       },
       {
@@ -249,7 +249,11 @@
   ],
   "interests": [
       {
-          "name": "Interactive Installations & Interactivity",
+          "name": "Interactive Installations",
+          "keywords": []
+      },
+      {
+          "name": "Critical Pedagogy",
           "keywords": []
       },
       {
@@ -269,19 +273,11 @@
           "keywords": []
       },
       {
-          "name": "Electronics",
-          "keywords": []
-      },
-      {
           "name": "Creativity",
           "keywords": []
       },
       {
-          "name": "Art & Design",
-          "keywords": []
-      },
-      {
-          "name": "Free and Open Source Software",
+          "name": "FOSS",
           "keywords": []
       }
   ],
