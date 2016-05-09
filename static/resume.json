@@ -44,6 +44,7 @@
       },
       {
           "company": "Visyon360",
+          "position": "Software Developer",
           "website": "http://www.visyon360.com/",
           "startDate": "2015, November",
           "endDate": "2016, June",
@@ -52,7 +53,7 @@
       },
       {
           "company": "Electronic Stars",
-          "position": "Software Architect",
+          "position": "Software Engineer",
           "website": "http://www.electronicstars.com/",
           "startDate": "2012, October",
           "endDate": "2015, September",
@@ -79,7 +80,7 @@
       },
       {
           "company": "Digital Emotions Co.",
-          "position": "Senior Software Developer",
+          "position": "Software Developer",
           "website": "",
           "startDate": "2004, June",
           "endDate": "2005, September",
