@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
     <script>
         function submit_the_form() {
-            if (document.getElementById("g-recaptcha-response").value !== "") document.forms['the_form'].submit();
-            else document.getElementsByClassName('advice')[0].style.visibility='visible';
+            if (document.getElementById("g-recaptcha-response").value !== "") {
+                document.getElementById("aaccess").style.visibility='hidden';
+                document.forms['the_form'].submit();
+            } else document.getElementsByClassName('advice')[0].style.visibility='visible';
         }
     </script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -23,7 +25,7 @@
         <img src="{{ url_for('static', filename='img/hand.gif') }}" class="advice" width="170px">
         <div class="g-recaptcha right-align" data-sitekey="6Le3AAsTAAAAAP8pMgC1k8ddzBrn-YlPMaRGE65S"></div>
         <div class="bottom-align" align="right">
-            <a href="#" onclick="submit_the_form();">Access to my resume</a>
+            <a id="aaccess" href="#" onclick="submit_the_form();">Access to my resume</a>
         </div>
     </form>
 </div>
