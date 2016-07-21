@@ -49,7 +49,7 @@ def root():
 def printable_resume():
     import jsonpickle
     import calendar
-    with open('static/resume.json') as json:
+    with open('static/content/resume.json') as json:
         data = jsonpickle.decode(json.read())
         extra = {
             'month_name': calendar.month_name[datetime.datetime.now().month],

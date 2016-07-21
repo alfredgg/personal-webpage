@@ -19,7 +19,7 @@
 <!--<![endif]-->
 
     <script>
-        var resume_url = "{{ url_for('static', filename='resume.json') }}"
+        var resume_url = "{{ url_for('static', filename='content/resume.json') }}";
     </script>
     
     <script src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
@@ -37,7 +37,7 @@
         <div class="submenu">
             <p>
                 <!-- resume/printable/ -->
-                <a href="{{ url_for('resume.printable_resume') }}">Printable version</a> - <a href="../static/resume.json">JSON Resume</a>
+                <a href="{{ url_for('resume.printable_resume') }}">Printable version</a> - <a href="../static/content/resume.json">JSON Resume</a>
             </p>
         </div>
     </div>
